@@ -1,30 +1,34 @@
 //business logic
-function pingpong(number) {
+function pingPong(number) {
   var ping=[];
   for(var i=1;i<=number;i++){
-    if (number%15===0) {
+    if (i%15===0) {
       ping.push("pingpong");
     }
-    else if (number%5===0){
+    else if (i%5===0){
       ping.push("pong");
     }
-    else if (number%3===0){
+    else if (i%3===0){
       ping.push("ping");
     }
-    else {ping.push(i);}
+    else {
+      ping.push(i);
+    }
   }
   return ping;
 }
 
 //user interface logic
 $(document).ready(function(){
-  $("button.btn.btn-primary").submit(function(event){
-    var number=$("#inputNumber").val();
+  $("form#form").submit(function(event){
+    var number=parseInt($("#inputNumber").val());
 
-    $("result").remove();
-    var corner=(pingpong(number)).toString();
+    event.preventDefault();
+    $("li.list").empty();
+
+    var corner=pingPong(number).toString();
     var split=corner.split(",").join("<br>");
-    $("result").append("<li>"+split+"</li>");
-
-  })
-})
+    $("#result").addClass("list").append("<li class='list'>"+split+"</li>");
+      console.log(split);
+  });
+});
