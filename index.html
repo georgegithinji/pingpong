@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron">
     <div class="container-fluid">
       <div class= "col-md-12">
   <h1 class="display-3">Ping Pong</h1>
@@ -19,14 +19,15 @@
 
   <div class="container-fluid">
     <div class ="col-md-8 offset-4">
-      <h2>Let's Play !</h2>
-      <h3>Rules:</h3>
-      <p class="lead">Ping pong will count up to your number from 1 with the following exceptions:</p>
-        <ol>
+      <h2><strong><em>Let's Play !</em></strong></h2>
+      <h3><strong>INSTRUCTIONS</strong></h3>
+      <p class="lead">Ping pong plays with the following instruction:</p>
+        <ul>
+          If you enter a number in the input area and submit,it will count up the numbers from 1 upto your number but with the following exceptions:
           <li>Numbers divisible by 3 become "ping"</li>
           <li>Numbers divisible by 5 become "pong"</li>
           <li>Numbers divisible by 3 and 5 become "pingpong"</li>
-        </ol>
+        </ul>
 
         <form id="form">
           <div class="form-group">
@@ -39,25 +40,26 @@
 
         <div class="result-tbl">
           <h3> Results</h3>
+
         <div id="result">
-        
 
-
-        </div>
         </div>
       </div>
+
+
+      <div id="aboutpingpong">
+        <h2><strong>ABOUT PING PONG</strong></h2>
+          <h3>Created by:</h3>
+          <p>George Githinji</p>
+          <p>Version:1.0.</p>
+
+      </div>
     </div>
-
-
-
+  </div>
 
 
     <script src="js/jquery-3.3.1.js"></script>
         <script src="js/scripts.js"></script>
-
-
-
-
 
 
 </body>
