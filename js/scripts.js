@@ -23,6 +23,7 @@ $(document).ready(function(){
 
     var corner=(pingpong(number)).toString();
     var split=corner.split(",").join("<br>");
+    $("result").append("<li>"+split+"</li>");
 
   })
 })
