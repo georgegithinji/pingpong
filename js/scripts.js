@@ -13,4 +13,12 @@ function pingpong(number) {
     }
     else {ping.push(i);}
   }
+  return ping;
 }
+
+//user interface logic
+$(document).ready(function(){
+  $("button.btn.btn-primary").submit(function(event){
+    var corner=(pingpong(number)).toString();
+  })
+})
