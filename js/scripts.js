@@ -19,6 +19,9 @@ function pingpong(number) {
 //user interface logic
 $(document).ready(function(){
   $("button.btn.btn-primary").submit(function(event){
+    var number=$("#inputNumber").val();
+
     var corner=(pingpong(number)).toString();
+
   })
 })
