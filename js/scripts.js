@@ -22,6 +22,7 @@ $(document).ready(function(){
     var number=$("#inputNumber").val();
 
     var corner=(pingpong(number)).toString();
+    var split=corner.split(",").join("<br>");
 
   })
 })
