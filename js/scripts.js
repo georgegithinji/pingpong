@@ -21,6 +21,7 @@ $(document).ready(function(){
   $("button.btn.btn-primary").submit(function(event){
     var number=$("#inputNumber").val();
 
+    $("result").remove();
     var corner=(pingpong(number)).toString();
     var split=corner.split(",").join("<br>");
     $("result").append("<li>"+split+"</li>");
