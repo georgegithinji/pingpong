@@ -11,46 +11,49 @@
 <body>
   <div class="jumbotron">
     <div class="container-fluid">
-      <div class= "col-md-12">
-  <h1 class="display-3">Ping Pong</h1>
+        <img class="col-md-4" src="images/drink.png" alt="logo for ping pong" height="200px" width="50px">
+          <h1 id="vertical-align" class="display-3 col-md-8 float-right">Ping Pong</h1>
+      </div>
+    </div>
+
+  <div id="firstdiv">
+    <div class="container-fluid">
+      <div class ="col-md-7">
+        <h2><strong><em>Let's Play !</em></strong></h2>
+        <h3><strong>INSTRUCTIONS</strong></h3>
+        <p class="lead">Ping pong plays with the following instruction:</p>
+          <ul>
+            If you enter a number in the input area and submit,it will count up the numbers from 1 upto your number but with the following exceptions:
+            <li>Numbers divisible by 3 become "ping"</li>
+            <li>Numbers divisible by 5 become "pong"</li>
+            <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+          </ul>
+
+          <form id="form">
+            <div class="form-group">
+              <label for="Number">Enter your number here:</label>
+              <input type="number" id="inputNumber" placeholder="Enter your number here">
+              <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+          </form>
+
+
+        <div class="result-tbl">
+            <h3> Results</h3>
+
+          <div id="result">
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="container-fluid">
-    <div class ="col-md-8 offset-4">
-      <h2><strong><em>Let's Play !</em></strong></h2>
-      <h3><strong>INSTRUCTIONS</strong></h3>
-      <p class="lead">Ping pong plays with the following instruction:</p>
-        <ul>
-          If you enter a number in the input area and submit,it will count up the numbers from 1 upto your number but with the following exceptions:
-          <li>Numbers divisible by 3 become "ping"</li>
-          <li>Numbers divisible by 5 become "pong"</li>
-          <li>Numbers divisible by 3 and 5 become "pingpong"</li>
-        </ul>
-
-        <form id="form">
-          <div class="form-group">
-            <label for="Number">Enter your number here:</label>
-            <input type="number" id="inputNumber" placeholder="Enter your number here">
-            <button type="submit" class="btn btn-primary">submit</button>
-          </div>
-        </form>
-
-
-        <div class="result-tbl">
-          <h3> Results</h3>
-
-        <div id="result">
-
-        </div>
-      </div>
-
-
       <div id="aboutpingpong">
+      <div class="col-md-12 test">
         <h2><strong>ABOUT PING PONG</strong></h2>
-          <h3>Created by:</h3>
-          <p>George Githinji</p>
+          <p>Creator:George Githinji</p>
           <p>Version:1.0.</p>
 
       </div>

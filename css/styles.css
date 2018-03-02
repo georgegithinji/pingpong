@@ -1,6 +1,13 @@
+//* {
+  border: 2px solid black;
+}
+*/
+.jumbotron {
+  background-color: white;
+}
 .result-tbl {
   height: 30vh;
-  border: 5px solid green;
+  border: 5px solid black;
   width: 40%;
 }
 .result-tbl h3 {
@@ -20,4 +27,20 @@
 }
 .jumbotron h1 {
   text-align: center;
+}
+#aboutpingpong p {
+  text-align: center;
+}
+#aboutpingpong {
+  float:left;
+}
+#firstdiv {
+  float:right;
+}
+.test {
+  width:100%;
+}
+#vertical-align {
+  text-align: center;
+  vertical-align: middle;
 }
