@@ -33,9 +33,11 @@
 }
 #aboutpingpong {
   float:left;
+background-color: #171C56   ;
 }
 #firstdiv {
   float:right;
+  background-image: url("../images/balls.jpg");
 }
 .test {
   width:100%;
